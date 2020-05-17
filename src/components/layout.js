@@ -9,7 +9,12 @@ const Layout = (props) => {
       <Global
         styles={css`
           html {
-            font-size: 62.5%
+            font-size: 62.5%;
+            box-sizing: border-box;
+          }
+
+          *, *:before, *:after {
+            box-sizing: inherit;
           }
           body {
             font-size: 1.8rem;
