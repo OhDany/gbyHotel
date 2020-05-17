@@ -10,8 +10,6 @@ const IndexPage = () => {
 
     const habitaciones = useHabitaciones();
 
-    console.log(habitaciones);
-
     return (
         <Layout>
             <ImagenHotel />
@@ -27,7 +25,10 @@ const IndexPage = () => {
 
             <ul>
               {habitaciones.map(habitacion => (
-                <HabitacionPreview />
+                <HabitacionPreview 
+                  key={habitacion.id}
+                  habitacion={habitacion}
+                />
               ))}
             </ul>
         </Layout>
