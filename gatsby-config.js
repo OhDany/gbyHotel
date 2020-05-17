@@ -37,5 +37,5 @@ module.exports = {
         apiToken: '89a4a76e5a1f4cfd971afe87cfcda5'
       }
     }
-  ],
+  ], 
 }
